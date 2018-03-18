@@ -1,0 +1,29 @@
+<div class="container">
+  <h2 align="left" class="table-primary table-lg">user list</h2>
+  <div class="panel panel-dark">
+    <div align="left" class="panel-heading">Filter by: <input type="text" name="fname" /></div>
+    <div class="panel-body">
+        <table class="table table-primary">
+            <thead>
+              <tr>
+                <th scope="col">FirstName</th>
+                <th scope="col">LastName</th>
+                <th scope="col">Email</th>
+                <th scope="col">Password</th>
+                <th scope="col">UserInfo</th>
+                <th scope="col">UserRating</th>                  
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let product of products">
+                <td>{{product._id}}</td>
+                <td>{{product.productName}}</td>
+                <td>{{product.productCode}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.category}}</td>
+                <td>{{product.productRating}}</td>
+            </tbody>
+          </table>
+    </div>
+  </div>
+</div>
